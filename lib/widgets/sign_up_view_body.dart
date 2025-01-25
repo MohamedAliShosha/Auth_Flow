@@ -43,7 +43,7 @@ class SignUpViewBody extends StatelessWidget {
             ),
             const Text(
               textAlign: TextAlign.center,
-              'Terms of Use and Privacy Policy',
+              'Terms of Use and Privacy Policy.',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
