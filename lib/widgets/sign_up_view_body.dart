@@ -1,3 +1,4 @@
+import 'package:auth_flow/views/sign_in_view.dart';
 import 'package:auth_flow/widgets/custom_button.dart';
 import 'package:auth_flow/widgets/custom_face_book_and_google_icons.dart';
 import 'package:auth_flow/widgets/custom_sign_up_body_content.dart';
@@ -65,7 +66,12 @@ class SignUpViewBody extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                    Navigator.pop(context);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SignInView(),
+                      ),
+                    );
                   },
                   child: const Text(
                     ' Login',
