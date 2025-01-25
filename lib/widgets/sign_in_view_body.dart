@@ -52,7 +52,7 @@ class SignInViewBody extends StatelessWidget {
               const SizedBox(
                 height: 50,
               ),
-              const CustomBodayContent(),
+              const CustomSignInBodayContent(),
               const SizedBox(
                 height: 50,
               ),

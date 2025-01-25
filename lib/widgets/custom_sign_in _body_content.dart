@@ -2,8 +2,8 @@ import 'package:auth_flow/widgets/custom_text_field.dart';
 import 'package:auth_flow/widgets/custom_title_item.dart';
 import 'package:flutter/material.dart';
 
-class CustomBodayContent extends StatelessWidget {
-  const CustomBodayContent({
+class CustomSignInBodayContent extends StatelessWidget {
+  const CustomSignInBodayContent({
     super.key,
   });
 
