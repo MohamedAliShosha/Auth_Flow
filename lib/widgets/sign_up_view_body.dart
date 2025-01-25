@@ -8,7 +8,10 @@ class SignUpViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
         leading: const Icon(
           Icons.arrow_back,
           color: Colors.black,
@@ -23,34 +26,38 @@ class SignUpViewBody extends StatelessWidget {
               fontWeight: FontWeight.bold),
         ),
       ),
-      body: const Padding(
-        padding: EdgeInsets.symmetric(vertical: 24, horizontal: 16),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            CustomTitleItem(title: 'Full Name'),
-            CustomTextField(
-              hintText: 'Example@Example.com',
-            ),
-            CustomTitleItem(title: 'Email'),
-            CustomTextField(
-              hintText: 'Example@Example.com',
-            ),
-            CustomTitleItem(title: 'Mobiile Number'),
-            CustomTextField(
-              hintText: 'Example@Example.com',
-            ),
-            CustomTitleItem(title: 'Date of Birth'),
-            CustomTextField(
-              hintText: 'Example@Example.com',
-            ),
-            CustomTitleItem(title: 'Password'),
-            CustomTextField(
-              hintText: 'Example@Example.com',
-            ),
-            CustomTitleItem(title: 'Confirm Password'),
-            CustomTextField(
-              hintText: 'Example@Example.com',
+      body: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
+        child: ListView(
+          children: const [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                CustomTitleItem(title: 'Full Name'),
+                CustomTextField(
+                  hintText: 'Example@Example.com',
+                ),
+                CustomTitleItem(title: 'Email'),
+                CustomTextField(
+                  hintText: 'Example@Example.com',
+                ),
+                CustomTitleItem(title: 'Mobile Number'),
+                CustomTextField(
+                  hintText: '+966',
+                ),
+                CustomTitleItem(title: 'Date of Birth'),
+                CustomTextField(
+                  hintText: 'DD / MM / YYYY',
+                ),
+                CustomTitleItem(title: 'Password'),
+                CustomTextField(
+                  hintText: 'Example@Example.com',
+                ),
+                CustomTitleItem(title: 'Confirm Password'),
+                CustomTextField(
+                  hintText: 'Example@Example.com',
+                ),
+              ],
             ),
           ],
         ),
