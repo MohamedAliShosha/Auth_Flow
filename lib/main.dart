@@ -1,4 +1,4 @@
-import 'package:auth_flow/views/sign_up_view.dart';
+import 'package:auth_flow/views/sign_in_view.dart';
 import 'package:flutter/material.dart';
 
 class AuthFlow extends StatelessWidget {
@@ -8,7 +8,7 @@ class AuthFlow extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SignUpView(),
+      home: SignInView(),
     );
   }
 }

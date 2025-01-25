@@ -134,16 +134,21 @@ class SignUpViewBody extends StatelessWidget {
                 ),
               ],
             ),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   'Already have an account?',
                 ),
-                Text(
-                  ' Login',
-                  style: TextStyle(
-                    color: Colors.grey,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: const Text(
+                    ' Login',
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
                   ),
                 )
               ],
@@ -154,6 +159,3 @@ class SignUpViewBody extends StatelessWidget {
     );
   }
 }
-
-
-
