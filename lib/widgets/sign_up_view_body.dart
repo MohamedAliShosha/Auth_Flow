@@ -62,7 +62,7 @@ class SignUpViewBody extends StatelessWidget {
                 ),
                 CustomTextField(
                   isObscure: true,
-                  hintText: 'Example@Example.com',
+                  hintText: 'Enter your password',
                 ),
                 CustomTitleItem(
                   title: 'Confirm Password',
@@ -73,7 +73,7 @@ class SignUpViewBody extends StatelessWidget {
                     Icons.visibility_off_outlined,
                     color: Color(0xffafa69d),
                   ),
-                  hintText: 'Example@Example.com',
+                  hintText: 'Confirm your password',
                 ),
               ],
             ),
@@ -101,7 +101,7 @@ class SignUpViewBody extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  margin: EdgeInsets.only(top: 10),
+                  margin: const EdgeInsets.only(top: 10),
                   width: 40,
                   height: 40,
                   decoration: BoxDecoration(
@@ -117,6 +117,7 @@ class SignUpViewBody extends StatelessWidget {
                   width: 25,
                 ),
                 Container(
+                  margin: const EdgeInsets.only(top: 10),
                   width: 40,
                   height: 40,
                   decoration: BoxDecoration(
@@ -127,9 +128,23 @@ class SignUpViewBody extends StatelessWidget {
                     ),
                   ),
                   child: Image.asset('assets/images/icons8-google-50.png'),
+                ),
+              ],
+            ),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Already have an account?',
+                ),
+                Text(
+                  ' Login',
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
                 )
               ],
-            )
+            ),
           ],
         ),
       ),
