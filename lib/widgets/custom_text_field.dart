@@ -5,17 +5,22 @@ class CustomTextField extends StatelessWidget {
     super.key,
     required this.hintText,
     this.maxLines = 1,
+    this.suffixIcon,
+    this.isObscure = false,
   });
 
   final String hintText;
   final int maxLines;
-
+  final Icon? suffixIcon;
+  final bool isObscure;
   @override
   Widget build(BuildContext context) {
     return TextField(
+      obscureText: isObscure,
       cursorColor: Colors.black,
       maxLines: maxLines,
       decoration: InputDecoration(
+        suffixIcon: suffixIcon,
         filled: true,
         fillColor: const Color(0xffddbbb2).withOpacity(0.3),
         hintText: hintText,

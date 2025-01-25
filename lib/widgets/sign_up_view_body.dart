@@ -33,7 +33,9 @@ class SignUpViewBody extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                CustomTitleItem(title: 'Full Name'),
+                CustomTitleItem(
+                  title: 'Full Name',
+                ),
                 CustomTextField(
                   hintText: 'Example@Example.com',
                 ),
@@ -41,20 +43,34 @@ class SignUpViewBody extends StatelessWidget {
                 CustomTextField(
                   hintText: 'Example@Example.com',
                 ),
-                CustomTitleItem(title: 'Mobile Number'),
+                CustomTitleItem(
+                  title: 'Mobile Number',
+                ),
                 CustomTextField(
                   hintText: '+966',
                 ),
-                CustomTitleItem(title: 'Date of Birth'),
+                CustomTitleItem(
+                  title: 'Date of Birth',
+                ),
                 CustomTextField(
                   hintText: 'DD / MM / YYYY',
                 ),
-                CustomTitleItem(title: 'Password'),
+                CustomTitleItem(
+                  title: 'Password',
+                ),
                 CustomTextField(
+                  isObscure: true,
                   hintText: 'Example@Example.com',
                 ),
-                CustomTitleItem(title: 'Confirm Password'),
+                CustomTitleItem(
+                  title: 'Confirm Password',
+                ),
                 CustomTextField(
+                  isObscure: true,
+                  suffixIcon: Icon(
+                    Icons.visibility_off_outlined,
+                    color: Color(0xffafa69d),
+                  ),
                   hintText: 'Example@Example.com',
                 ),
               ],
