@@ -1,3 +1,4 @@
+import 'package:auth_flow/widgets/sign_up_view_body.dart';
 import 'package:flutter/material.dart';
 
 class SignUpView extends StatelessWidget {
@@ -5,6 +6,8 @@ class SignUpView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Scaffold(
+      body: SignUpViewBody(),
+    );
   }
 }
