@@ -16,11 +16,11 @@ class CustomSignUpBodyContent extends StatelessWidget {
           title: 'Full Name',
         ),
         CustomTextField(
-          hintText: 'Example@Example.com',
+          hintText: 'Example@Example.Com',
         ),
         CustomTitleItem(title: 'Email'),
         CustomTextField(
-          hintText: 'Example@Example.com',
+          hintText: 'Example@Example.Com',
         ),
         CustomTitleItem(
           title: 'Mobile Number',
