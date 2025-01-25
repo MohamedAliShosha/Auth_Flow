@@ -89,7 +89,7 @@ class SignInViewBody extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 50,
+                height: 80,
               ),
               Text(
                 textAlign: TextAlign.center,
