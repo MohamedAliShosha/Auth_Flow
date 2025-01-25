@@ -89,6 +89,43 @@ class SignUpViewBody extends StatelessWidget {
             CustomButton(
               text: 'Sign Up',
             ),
+            Text(
+              textAlign: TextAlign.center,
+              'or sign up with',
+              style: TextStyle(color: Colors.black.withOpacity(0.6)),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                  ),
+                  child: Image.asset('assets/images/icons8-facebook-50.png'),
+                ),
+                const SizedBox(
+                  width: 50,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                  ),
+                  child: Image.asset('assets/images/icons8-google-50.png'),
+                )
+              ],
+            )
           ],
         ),
       ),

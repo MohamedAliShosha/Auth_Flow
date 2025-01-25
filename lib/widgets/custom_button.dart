@@ -9,7 +9,7 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(right: 40, left: 40),
+      padding: const EdgeInsets.only(right: 40, left: 40, bottom: 10),
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
