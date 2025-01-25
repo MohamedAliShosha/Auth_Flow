@@ -77,10 +77,13 @@ class SignUpViewBody extends StatelessWidget {
                 ),
               ],
             ),
-            Text(
-              textAlign: TextAlign.center,
-              'By continuing, you agree to ',
-              style: TextStyle(color: Colors.black.withOpacity(0.6)),
+            Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: Text(
+                textAlign: TextAlign.center,
+                'By continuing, you agree to ',
+                style: TextStyle(color: Colors.black.withOpacity(0.6)),
+              ),
             ),
             const Text(
               textAlign: TextAlign.center,
@@ -98,8 +101,9 @@ class SignUpViewBody extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: 50,
-                  height: 50,
+                  margin: EdgeInsets.only(top: 10),
+                  width: 40,
+                  height: 40,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(
@@ -110,11 +114,11 @@ class SignUpViewBody extends StatelessWidget {
                   child: Image.asset('assets/images/icons8-facebook-50.png'),
                 ),
                 const SizedBox(
-                  width: 50,
+                  width: 25,
                 ),
                 Container(
-                  width: 50,
-                  height: 50,
+                  width: 40,
+                  height: 40,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(
