@@ -30,19 +30,20 @@ class CustomTextField extends StatelessWidget {
         border: buildBorder(),
         enabledBorder: buildBorder(Colors
             .white), // for unfocused => The user is not interacting with the TextField.
-        focusedBorder: buildBorder(const Color(
-            0xffddbbb2)), // for focused => The user is interacting with the TextField.
+        focusedBorder: buildBorder(Colors
+            .white), // for focused => The user is interacting with the TextField.
       ),
     );
   }
 
   OutlineInputBorder buildBorder([color]) {
     return OutlineInputBorder(
-        borderRadius: const BorderRadius.all(
-          Radius.circular(14),
-        ),
-        borderSide: BorderSide(
-          color: color ?? Colors.white,
-        ));
+      borderRadius: const BorderRadius.all(
+        Radius.circular(14),
+      ),
+      borderSide: BorderSide(
+        color: color ?? Colors.white,
+      ),
+    );
   }
 }

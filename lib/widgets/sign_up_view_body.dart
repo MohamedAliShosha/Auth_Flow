@@ -1,3 +1,4 @@
+import 'package:auth_flow/widgets/custom_button.dart';
 import 'package:auth_flow/widgets/custom_text_field.dart';
 import 'package:auth_flow/widgets/custom_title_item.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +12,7 @@ class SignUpViewBody extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.white,
         leading: const Icon(
           Icons.arrow_back,
           color: Colors.black,
@@ -27,10 +28,11 @@ class SignUpViewBody extends StatelessWidget {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
+        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 24),
         child: ListView(
-          children: const [
-            Column(
+          shrinkWrap: true, // to make the list view scrollable
+          children: [
+            const Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 CustomTitleItem(
@@ -74,6 +76,18 @@ class SignUpViewBody extends StatelessWidget {
                   hintText: 'Example@Example.com',
                 ),
               ],
+            ),
+            Text(
+              textAlign: TextAlign.center,
+              'By continuing, you agree to ',
+              style: TextStyle(color: Colors.black.withOpacity(0.6)),
+            ),
+            const Text(
+              textAlign: TextAlign.center,
+              'Terms of Service and Privacy Policy',
+            ),
+            CustomButton(
+              text: 'Sign Up',
             ),
           ],
         ),
