@@ -13,9 +13,9 @@ class SignUpViewBody extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
-        leading: const Icon(
+        leading: Icon(
           Icons.arrow_back,
-          color: Colors.black,
+          color: Colors.black.withOpacity(0.6),
           size: 30,
         ),
         titleSpacing: 50,
@@ -88,6 +88,9 @@ class SignUpViewBody extends StatelessWidget {
             const Text(
               textAlign: TextAlign.center,
               'Terms of Service and Privacy Policy',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
             ),
             CustomButton(
               text: 'Sign Up',
